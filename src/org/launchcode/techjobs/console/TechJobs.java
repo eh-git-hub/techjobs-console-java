@@ -115,12 +115,12 @@ public class TechJobs {
     // Print a list of jobs
     //TODO: implement if statement that shows message if no jobs found
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
-        //if statement
+        //if statement printing message if searchTerm not found
         if(someJobs.isEmpty()) {
             System.out.println("no result");
             return;
         }
-
+        //iterate over ArrayList and HashMap
         for(HashMap<String, String> jobList : someJobs){
             System.out.println("*****");
             for(Map.Entry<String, String> eachJobList : jobList.entrySet()) {
