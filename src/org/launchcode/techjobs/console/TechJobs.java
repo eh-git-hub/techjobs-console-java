@@ -112,26 +112,23 @@ public class TechJobs {
     }
 
     // Print a list of jobs
-    //TODO: implement if statement that shows message if no jobs found
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         for(HashMap<String, String> jobList : someJobs){
             System.out.println("*****");
-            for(Map.Entry<String, String> eachJobList : jobList.entrySet()) {
+            for(Map.Entry<String, String> eachJobList : jobList.entrySet()){
 
-                String aValue = eachJobList.getValue();
+            String key = eachJobList.getKey();
+            String value = eachJobList.getValue();
 
-//                if(aValue.contains(someJobs){
-                    String key = eachJobList.getKey();
-                    String value = eachJobList.getValue();
-
-                    System.out.println(key + ": " + value);
-//                } else {
-//                    System.out.println("no result");
-//                }
+            System.out.println(key + ": " + value);
             }
             System.out.println("*****");
             System.out.println("\n");
         }
+
+//        if (!searchTerm.contains(value)) {
+//
+//        }
         //System.out.println("printJobs is not implemented yet");
     }
 }
