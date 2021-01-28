@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Collections;
 
 /**
  * Created by LaunchCode
@@ -127,8 +128,12 @@ public class TechJobs {
 
                 String key = eachJobList.getKey();
                 String value = eachJobList.getValue();
-
                 System.out.println(key + ": " + value);
+                //TODO: sorting list results
+//                ArrayList<String> al = new ArrayList<String>();
+//                al.add(value);
+//                Collections.sort(al, Collections.reverseOrder());
+//                System.out.println(al);
             }
             System.out.println("*****");
             System.out.println("\n");
